@@ -1,4 +1,4 @@
-# Mail Reader App
+# Mail Reader App 🛠️[WIP]
 
 A Next.js application for extracting and analyzing bank-related emails with AI-powered insights.
 
