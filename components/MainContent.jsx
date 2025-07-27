@@ -1,11 +1,14 @@
 import React, { useState } from "react";
-import { Button } from "@/components/ui/button";
-import {
-  buildGmailQuery,
-  useGmailMessages,
-  parseTransactionsFromEmails,
-} from "@/hooks/useGmailApi";
 import { signOut, useSession } from "next-auth/react";
+
+// Components
+import { Button } from "@/components/ui/button";
+
+// Hooks
+import { buildGmailQuery, useGmailMessages } from "@/hooks/useGmailApi";
+
+// Utils
+import { parseTransactionsFromEmails } from "@/utils/gmail";
 
 const MainContent = () => {
   const { data: session } = useSession();
